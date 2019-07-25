@@ -19,6 +19,14 @@ repositories {
 	mavenCentral()
 }
 
+if (jarName) {
+	bootJar {
+		archiveFileName = jarName + ".jar"
+		manifest {
+			attributes("Implementation-Version": version)
+		}
+	}
+}
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly 'org.projectlombok:lombok'

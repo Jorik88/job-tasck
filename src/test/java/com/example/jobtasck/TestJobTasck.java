@@ -40,7 +40,7 @@ public class TestJobTasck {
         return resultString.toString();
     }
 
-//    Нужно найти в массиве сумму двух чисел которые равны sum.
+//    Нужно найти в массиве два числа, сумма которых равна sum.
     @Test
     public void testFindSumOfTwoElements() {
         int[] array = {4, 5, 7, 9, -1, 6};
@@ -76,10 +76,5 @@ public class TestJobTasck {
             }
         }
         return null;
-    }
-
-    @Test
-    public void testDel() {
-        System.out.println((7 / 2) );
     }
 }
